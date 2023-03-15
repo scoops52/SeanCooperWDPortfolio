@@ -1,0 +1,243 @@
+.app__navbar { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+    
+    padding: 1rem 2rem;
+    border: 1px solid #222222;
+    background-color: #000000;
+    // border: 1px solid #222222;
+   
+    
+
+}
+
+.app__navbar-logo {
+    display: flex;
+    
+   
+    img {
+        width: 250px;
+    }
+
+
+    // .logo-hover {
+    //     position: absolute;
+    //     left: 31.5px;
+    //     top: 16.75px;
+    //     display: none;
+        
+    // }
+    // &:hover {
+    //     .logo-hover {
+    //         display: block;
+    //     }
+        
+    // }
+    
+
+    
+
+   
+
+    
+    
+    // @media screen and (min-width: 2000px){
+    //     width: 500px
+    // }
+    
+    
+   
+    
+
+
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: var(--font-base);
+    list-style: none;
+    font-size: 20px;
+    position: relative;
+    bottom: -10px;
+    
+
+    li {
+        margin: 0 1rem;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        
+
+        .p-text {
+            font-size: 1rem;
+        }
+        
+
+        a {
+            background-image: linear-gradient(
+              to right,
+              var(--lightGray-color),
+              var(--lightGray-color) 50%,
+              var(--white-color) 50%
+            );
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 0px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          a:before{
+            content: '';
+            background: var(--lightGray-color);
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          a:hover {
+           background-position: 0;
+          }
+          
+          a:hover::before{
+            width: 100%;
+          }
+
+    }
+
+    @media screen and (max-width: 900px) { 
+        display: none;
+    }
+}
+
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+
+
+
+    svg {
+        width: 70%;
+        height: 70%;
+        color: var(--primary-color);
+    }
+
+    @media screen and (min-width: 900px ) {
+        display: none;
+    }  
+
+}
+
+    .app__navbar-dropdown {
+        background: #222222;
+    position: absolute;
+    top: 89px;
+    right: 0px;
+    z-index: 1000;
+    width: 50%;
+    font-size: 24px;
+    font-size: 1.4rem;
+    font-family: var(--font-base);
+    text-align: center;
+
+    li {
+        height: 2.4rem;
+        list-style: none;
+        display: block;
+        border-top: #212121 solid 1px;
+        border-bottom: #363636 solid 1px;
+
+        .p-text {
+            font-size: 1rem;
+        }
+        
+
+        a {
+            background-image: linear-gradient(
+              to right,
+              var(--lightGray-color),
+              var(--lightGray-color) 50%,
+              var(--white-color) 50%
+            );
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 0px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          a:before{
+            content: '';
+            background: var(--lightGray-color);
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          a:hover {
+           background-position: 0;
+          }
+          
+          a:hover::before{
+            width: 100%;
+          }
+
+    }
+    
+    @media screen and (min-width: 900px ) {
+        display: none;
+    }  
+    
+ }
+
+
+
+
+.app__navbar-socials {
+        display: flex;
+        align-items: baseline;
+        margin-top: 1.5rem;
+    a {
+        margin: 0 .25rem;
+
+        .social {
+            color: var(--primary-color);
+
+            &:hover {
+                color: var(--lightGray-color);
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    @media screen and (max-width: 900px) { 
+        display: none;
+    }
+}
+

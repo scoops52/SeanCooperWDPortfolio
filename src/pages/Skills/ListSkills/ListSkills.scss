@@ -1,0 +1,41 @@
+.skills-list {
+    display: flex;
+    font-family: var(--font-alt);
+    font-size: 1rem;
+    color: var(--mediumEmph-color);
+    flex-wrap: wrap;
+    
+
+    li {
+        list-style: none;
+        margin: .75rem;
+        
+        span {
+            margin-left: 0.5rem
+        }
+    }
+}
+
+
+.skill-pair {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.sublist {
+    display: none;
+    position: absolute;
+    margin-left: 1rem;
+    font-size: 1rem;
+    li {
+        list-style: circle;
+        margin: 1px;
+    }
+}
+
+.dropdown:hover {
+    .sublist {
+        display: block;
+    }
+}

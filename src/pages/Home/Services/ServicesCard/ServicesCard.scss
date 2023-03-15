@@ -1,0 +1,68 @@
+.app__services-card {
+    height: 22em;
+    width: 18em;
+    color: white;
+    border-radius: 1em;
+    // padding: 0;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 0 53m -1em black;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #cccccc;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 1rem;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: .5;
+    }
+
+    h2 {
+        font-family: var(--font-base);
+        color: var(--mediumEmph-color);
+        z-index: 2;
+    // background-color: #343739;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    }
+
+    p { 
+        font-family: var(--font-alt);
+        position: absolute;
+    top: 0;
+    padding: 16px;
+    width: 90%;
+    opacity: 0;
+    color: var(--mediumEmph-color);
+        font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    // text-transform: uppercase;
+    margin: 0 1rem;
+    }
+
+    &:hover {
+        img {
+            height: 100%;
+        opacity: 0.05;
+        background-color: #110f0e;
+        }
+
+        p {
+            opacity: 1;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+
+}

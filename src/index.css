@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Montserrat:wght@400;500&display=swap');
+
+
+
+:root {
+  --font-base: 'Montserrat', sans-serif;
+  --font-alt: 'Hind Siliguri', sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #121212e5;
+  --black-color: #121212;
+  --gray-color: #404040;
+  --lightGray-color: #b1b3b5;
+  --offWhite-color: #d9d9d9;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+  --highEmph-color: rgba(255,255,255,0.87);
+  --mediumEmph-color: rgba(255,255,255,0.67);
+  --disabled-color: rgba(255,255,255,0.38)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
 }
+
+
+/* ******BUTTON LINKS *******
+
+a {
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transform-origin: 50% 50%;
+  transform: scale(1);
+  transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98);
+
+  &:hover {
+      color: #70757c;
+      transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98);
+
+      &:before {
+          opacity: 1;
+          transform: translateX(4px);
+          transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98) 0.1s;
+      }
+      &:after {
+          transform: scaleX(0);
+          transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98);
+      }
+  }
+  &:before {
+      display: inline-block;
+      content: '\2192';
+      opacity: 0;
+      position: absolute;
+      top:8px;
+      right: -15px;
+      font-size: 14px;
+      line-height: 14px;
+      border-radius: 50%;
+      transition-delay: 0.2s;
+      transform: translateX(0);
+      transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98);
+  }
+  &:after {
+      background: #8a8f95;
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: -2px;
+  width: 100%;
+  z-index: 0;
+  transform-origin: 100% 0;
+  transform: scaleX(1);
+  transition: all 0.1s cubic-bezier(0.49, 0.99, 0.54, 0.98) 0.1s;
+  }
+} */

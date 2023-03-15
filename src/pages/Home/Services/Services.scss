@@ -1,0 +1,47 @@
+.app__services {
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+
+    .app__services-p {
+        color: var(--mediumEmph-color);
+        font-size: .5rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    }
+    
+}
+
+.app__services-title {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-alt);
+    margin: 3.2rem 0;
+    position: relative;
+    h3 {
+        color: var(--mediumEmph-color);
+        font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    }
+    hr {
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__services-deck {
+        flex-direction: column;
+    }
+}
