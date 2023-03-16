@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './Form.scss';
-import { AiOutlineExclamationCircle ,AiOutlineCheckCircle } from 'react-icons/ai'
+import { AiOutlineExclamationCircle, AiOutlineCheckCircle } from 'react-icons/ai';
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Form = () => {
-    
+
     const [nameValidity, setNameValidity] = useState(null);
     const [emailValidity, setEmailValidity] = useState(null);
     const [messageValidity, setMessageValidity] = useState(null);
@@ -11,21 +14,12 @@ const Form = () => {
     const [emailClassName, setEmailClassName] = useState('form-control');
     const [messageClassName, setMessageClassName] = useState('form-control');
     const [name, setName] = useState('');
+    const [captchaToken, setCaptchaToken] = useState('');
 
-    // const handleSubmit = (e) => {
-    //     const form = e.target;
-    //     if (!form.checkValidity()) {
-    //         e.preventDefault();
-    //         e.stopPropagation();
-    //     }
-    //     setIsValidated(true);
-    //     e.preventDefault();
-
-    // };
 
     const checkNameValidity = (e) => {
         const input = e.target;
-        
+
         if (!input.checkValidity()) {
             setNameValidity(false);
             setNameClassName('was-invalidated');
@@ -35,7 +29,7 @@ const Form = () => {
             setNameClassName('was-validated');
             console.log(nameClassName);
         }
-        
+
     };
 
     const checkEmailValidity = (e) => {
@@ -51,7 +45,7 @@ const Form = () => {
 
     const checkMessageValidity = (e) => {
         const input = e.target;
-        
+
         if (!input.checkValidity()) {
             setMessageValidity(false);
             setMessageClassName('was-invalidated');
@@ -61,45 +55,54 @@ const Form = () => {
             setMessageClassName('was-validated');
             console.log(nameClassName);
         }
-        
+
     };
 
     const handleName = (e) => {
         setName(e.target.value);
     }
 
-    // const inputClassNames = ['form-control'];
-    // if (inputValidity) {
-    //     inputClassNames.push('was-validated');
-    //     console.log(inputClassNames);
-    // };
+    //  *****emailJS******
 
-    // const formClassNames = ['needs-validation'];
-    // if (isValidated) {
-    //     formClassNames.push('was-validated');
-    // }
-    // formClassNames.push('was-invalidated');
+    const form = useRef();
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        if (captchaToken) {
+            emailjs.sendForm('service_ia2f1st', 'template_73h01vg', form.current, 'HM4xy5fugu2lLLMLl')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+        } else {
+            alert('Please verify that you are a human')
+        }
+    };
+
 
 
     return (
-        <form   noValidate>
+        <form ref={form} onSubmit={sendEmail}  >
             <div className="form-floating info">
-                <input name='name' type="text" placeholder='name' className={nameClassName}  onBlur={checkNameValidity} onChange={handleName} required />
+                <input name='name' type="text" placeholder='name' className={nameClassName} onBlur={checkNameValidity} onChange={handleName} required />
                 <label htmlFor="name">Name</label>
                 {nameValidity && (
                     <>
-                    <AiOutlineCheckCircle color='green' size={20} className='invalid-icon'/>
-                    <div className='valid-feedback'>
-                        {`Thanks ${name}!`}
-                    </div>
+                        <AiOutlineCheckCircle color='green' size={20} className='invalid-icon' />
+                        <div className='valid-feedback'>
+                            {`Thanks ${name}!`}
+                        </div>
                     </>
                 )}
                 {nameValidity === false && (
-                   <>
-                   <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon'/>
-                    <div className="invalid-feedback">
-                        So mysterious... please put a name.
-                    </div>
+                    <>
+                        <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon' />
+                        <div className="invalid-feedback">
+                            So mysterious... please put a name.
+                        </div>
                     </>
                 )}
             </div>
@@ -108,43 +111,51 @@ const Form = () => {
                 <label htmlFor="email">E-Mail</label>
                 {emailValidity && (
                     <>
-                    <AiOutlineCheckCircle color='green' size={20} className='invalid-icon'/>
-                    <div className='valid-feedback'>
-                        Looks Good!
-                    </div>
+                        <AiOutlineCheckCircle color='green' size={20} className='invalid-icon' />
+                        <div className='valid-feedback'>
+                            Looks Good!
+                        </div>
                     </>
                 )}
                 {emailValidity === false && (
                     <>
-                    <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon'/>
-                    <div className="invalid-feedback">
-                        But how will I reply?
-                    </div>
+                        <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon' />
+                        <div className="invalid-feedback">
+                            But how will I reply?
+                        </div>
                     </>
                 )}
             </div>
             <div className="form-floating message-container" >
-                <textarea name='message' type='textarea' placeholder='message' onBlur={checkMessageValidity} className={messageClassName} required/>
+                <textarea name='message' type='textarea' placeholder='message' onBlur={checkMessageValidity} className={messageClassName} required />
                 <label htmlFor="message">Message</label>
                 {messageValidity && (
                     <>
-                    <AiOutlineCheckCircle color='green' size={20} className='invalid-icon'/>
-                    <div className='valid-feedback'>
-                        I look forward to reading your message {name}!
-                    </div>
+                        <AiOutlineCheckCircle color='green' size={20} className='invalid-icon' />
+                        <div className='valid-feedback'>
+                            I look forward to reading your message {name}!
+                        </div>
                     </>
                 )}
                 {messageValidity === false && (
                     <>
-                    <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon'/>
-                    <div className="invalid-feedback">
-                        The strong silent type?
-                    </div>
+                        <AiOutlineExclamationCircle color='red' size={20} className='invalid-icon' />
+                        <div className="invalid-feedback">
+                            The strong silent type?
+                        </div>
                     </>
                 )}
             </div>
             <div className='btn-container'>
                 <button className='submit-btn' type='submit'>Send</button>
+            </div>
+            <div className='captcha-container'>
+            <ReCAPTCHA
+                sitekey='6LdzTQYlAAAAAGYTH98mG6b1xrKGFXPeUpTepMeg'
+                onChange={handleCaptchaChange}
+                theme='dark'
+                
+            />
             </div>
         </form>
     )
