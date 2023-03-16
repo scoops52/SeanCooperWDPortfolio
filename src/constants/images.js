@@ -6,5 +6,6 @@ import websiteUnsplash from '../assets/website-unsplash.jpg'
 import eCommerce from '../assets/online_shop.jpg';
 import code from '../assets/code.jpg';
 import rugbyHeadshot from '../assets/rugby_headshot-removebg-preview.png';
-
-export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot }
+import KoaNoBg from '../assets/KoaPupNoBg.PNG';
+// eslint-disable-next-line
+export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg }
