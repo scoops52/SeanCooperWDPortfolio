@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import {  NavLink } from 'react-router-dom';
+
 import './Footer.scss'
 
 

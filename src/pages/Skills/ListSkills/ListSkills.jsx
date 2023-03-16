@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaChevronDown, FaGit, FaGitAlt } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaChevronDown, FaGitAlt } from 'react-icons/fa';
 import { SiJavascript, SiRedux } from 'react-icons/si';
 import './ListSkills.scss';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { images } from '../../../constants';
+
 import './Title.scss';
 
 const Title = ({ text }) => {

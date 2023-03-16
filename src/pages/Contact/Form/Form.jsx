@@ -3,7 +3,7 @@ import './Form.scss';
 import { AiOutlineExclamationCircle ,AiOutlineCheckCircle } from 'react-icons/ai'
 
 const Form = () => {
-    const [isValidated, setIsValidated] = useState(false);
+    
     const [nameValidity, setNameValidity] = useState(null);
     const [emailValidity, setEmailValidity] = useState(null);
     const [messageValidity, setMessageValidity] = useState(null);
