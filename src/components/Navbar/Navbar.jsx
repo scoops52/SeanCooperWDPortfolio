@@ -20,9 +20,6 @@ const Navbar = () => {
         <div className='logo'>
           <img src={images.logoWhite} alt='logo' />
         </div>
-        {/* <div className='logo-hover'>
-          <img src={images.logoGrey} alt='logo' />
-        </div> */}
       </NavLink>
       <ul className='app__navbar-links'>
         {['about', 'skills', 'portfolio', 'contact'].map((item) => (
