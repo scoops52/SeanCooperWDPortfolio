@@ -7,5 +7,8 @@ import eCommerce from '../assets/online_shop.jpg';
 import code from '../assets/code.jpg';
 import rugbyHeadshot from '../assets/rugby_headshot-removebg-preview.png';
 import KoaNoBg from '../assets/KoaPupNoBg.PNG';
+import Watchr from '../assets/Watchr.png';
+import Liz from '../assets/LizWebsite.png';
+import SeanWebsite from '../assets/SeanWebsite.png';
 // eslint-disable-next-line
-export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg }
+export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite }

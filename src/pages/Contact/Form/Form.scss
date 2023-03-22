@@ -147,58 +147,22 @@ input {
 }
 
 .was-validated {
-    // padding: 1rem 0.75rem;
-    // display: block;
-    // width: 100%;
-    // font-size: 1rem;
-    // font-weight: 400;
-    // color:#060605;
-    // background-color: var(--white-color);
-    // background-clip: padding-box;
+   
     border: 1px solid rgba(0, 255, 0, 0.758);
-    // appearance: none;
-    // border-radius: 0.375rem;
-    // transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-
+    
 }
 
-// .was-validated:focus~label,
-// .was-validated:not(:placeholder-shown)~label
-//  {
-//     opacity: .65;
-//             transform: scale(.85) translateY(-.5rem) translateX(0.15rem);
-// }
+
 
 
 .was-invalidated {
-    // padding: 1rem 0.75rem;
-    // display: block;
-    // width: 100%;
-    // font-size: 1rem;
-    // font-weight: 400;
-    // color:#060605;
-    // background-color: var(--white-color);
-    // background-clip: padding-box;
+   
     border: 1px solid rgba(255, 0, 0, 0.758);
-    // appearance: none;
-    // border-radius: 0.375rem;
-    // transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    
 
 }
 
-// .was-invalidated:focus~label,
-// .was-invalidated:not(:placeholder-shown)~label
-// {
-// opacity: .65;
-//         transform: scale(.85) translateY(-.5rem) translateX(0.15rem);
-// }
 
-// .message:focus~label,
-// .message:not(:placeholder-shown)~label
-// {
-// opacity: .65;
-//         transform: scale(.85) translateY(-.5rem) translateX(0.15rem);
-// }
 
 
 .btn-container {

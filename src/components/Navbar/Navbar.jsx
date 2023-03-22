@@ -28,64 +28,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-
-      {/* <div className='app__navbar-links'>
-          
-            <div className="li">
-              <NavLink
-              className='app__flex p-text link'
-              to='about'
-              >
-              
-                About
-              </NavLink>
-            </div>
-          
-          
-            <div className="li">
-              
-              <NavLink
-              className='app__flex p-text link'
-              to='skills'
-              >
-              
-                Skills
-              </NavLink>
-            </div>
-          
-          
-            <div className="li">
-              
-              <NavLink
-              className='app__flex p-text link'
-              to='portfolio'
-              >
-              
-                Portfolio
-              </NavLink>
-            </div>
-          
-          
-            <div className="li">
-              
-              <NavLink
-              className='app__flex p-text link'
-              to='contact'
-              >
-              
-                Contact
-              </NavLink>
-            </div>
-            <div className='app__navbar-socials' >
-              <Link to='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
-                <AiOutlineLinkedin size={25} className='social'/>
-              </Link>
-              <Link to='https://github.com/' target='_blank' rel='noopener noreferrer'>
-                <AiOutlineGithub size={25} className='social'/>
-              </Link>
-        </div>
-        </div> */}
       <div className='app__navbar-menu'>
         { !open ? 
         <HiMenuAlt4 onClick={handleClick} />
@@ -109,10 +51,10 @@ const Navbar = () => {
         )}
       </div>
       <div className='app__navbar-socials' >
-        <Link to='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
+        <Link to='https://www.linkedin.com/in/sean-cooper-cscs-70b1a9146/' target='_blank' rel='noopener noreferrer'>
           <AiOutlineLinkedin size={25} className='social' />
         </Link>
-        <Link to='https://github.com/' target='_blank' rel='noopener noreferrer'>
+        <Link to='https://github.com/scoops52' target='_blank' rel='noopener noreferrer'>
           <AiOutlineGithub size={25} className='social' />
         </Link>
       </div>

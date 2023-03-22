@@ -1,18 +1,21 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    align-items: center;
     width: 100%;
     
 }
 
-.cardOneContainer {
+
+.cardTwoContainer {
     display: flex;
-    margin: 2rem;
-    width: 90%;
-    height: 370px;
-    align-items: center;
+   align-items: center;
+    width: 95%;
+    height: 360px;
+    justify-content:flex-end;
+    
 }
+
 
 .imageCard {
     display: flex;
@@ -33,6 +36,7 @@
     width: 20%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     
     .arrowOpen {
         font-size: 2rem;
@@ -52,8 +56,9 @@
     width: 30%;
     background: linear-gradient(145.36deg, rgba(244, 244, 244, 0.4) -4.23%, rgba(244, 244, 244, 0.2) 102.58%);
     backdrop-filter: blur(10px);
-    border-radius: 0 50px 50px 0 ;
-    margin-left: -2.5rem;
+    border-radius: 50px 0 0 50px ;
+    margin-right: -2.75rem;
+    
 }
 
 
@@ -61,9 +66,9 @@
 
 
 
-@keyframes slide-in {
+@keyframes slide-out {
     from {
-      transform: translateX(-40%);
+      transform: translateX(40%);
     }
     to {
       transform: translateX(0);
@@ -73,33 +78,34 @@
   
   .infoCard {
     
-    animation: slide-in 0.5s ease-out forwards;
+    animation: slide-out 0.5s ease-out forwards;
 
     height: 100%;
     display: flex;
     align-items: center;
-    
     box-sizing: border-box;
     height: 100%;
     width: 40%;
     background: linear-gradient(145.36deg, rgba(244, 244, 244, 0.4) -4.23%, rgba(244, 244, 244, 0.2) 102.58%);
   backdrop-filter: blur(10px);
-  border-radius: 0 50px 50px 0 ;
+  border-radius: 50px 0 0 50px ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0rem 1rem 0rem 3rem;
-  margin-left: -2.2rem;
+  margin-right: -2.75rem;
+  padding: 0 3rem 0.5rem 3rem;
+  
   z-index: 1;
   }
   
 
 .closeCard {
     position: relative;
-    left: 45%;
+    right: 55%;
     top: 5%;
     cursor: pointer;
 }
+  
 
 .mobileLinks {
     display: none;
@@ -112,8 +118,9 @@
 
 
   @media screen and (max-width: 768px) {
-    .cardOneContainer {
+    .cardTwoContainer {
         flex-direction: column;
+        margin: 2rem 0;
     }
 
     .closedCard {
@@ -127,11 +134,11 @@
   }
 
   @media screen and (max-width: 390px) {
-    .cardOneContainer {
+    .cardTwoContainer {
         width: 100%;
-  max-width: 390px;
-  max-height: 300px;
+  max-width: 370px;
   margin: 0 auto;
+  max-height: 300px;
     }
     .imageCard{
         height: 60%;  
@@ -142,3 +149,4 @@
    }
 
 }
+  

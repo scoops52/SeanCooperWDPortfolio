@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-color);
+    width: 100%;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 2rem;
+
+    h1 {
+        font-family: var(--font-base);
+        color: var(--highEmph-color);
+        font-size: 70px;
+    }
+
+    h3 {
+        font-family: var(--font-alt);
+        color: var(--mediumEmph-color)
+    }
+}
+
+.card {
+    width: 100%;
+}
+
+@media screen and (max-width: 390px) {
+    .card {
+        object-fit: cover;
+        height: 30%;
+}
+}

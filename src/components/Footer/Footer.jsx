@@ -15,14 +15,6 @@ const Footer = () => {
                 Contact Me
             </NavLink>
         </div>
-        {/* <div className='app__footer-socials'>
-        <Link to='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
-          <AiOutlineLinkedin size={25} className='social' />
-        </Link>
-        <Link to='https://github.com/' target='_blank' rel='noopener noreferrer'>
-          <AiOutlineGithub size={25} className='social' />
-        </Link>
-        </div> */}
     </div>
   )
 }

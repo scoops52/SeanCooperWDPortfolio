@@ -22,7 +22,7 @@ const Services = () => {
         <ServicesCard
         image={images.eCommerce}
         title='Dynamic Websites like eCommerce or Blogs'
-        desc='Always wanted to share your travel experiences? Trying to make some extra cash selling merchandise? Leave the site builing to a professional so you can focus on doing what you do best! ' />
+        desc='Always wanted to share your travel experiences? Trying to make some extra cash selling merchandise? Leave the site building to a professional so you can focus on doing what you do best! ' />
         <ServicesCard
         image={images.code}
         title='Web Applications'
