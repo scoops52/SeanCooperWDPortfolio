@@ -87,7 +87,7 @@ const projects = [
                 label: 'React Router'
             },
         ],
-        link: 'https://delightful-entremet-6176be.netlify.app/',
+        link: 'https://seancooperwebdev.netlify.app/',
         gitHub: 'https://github.com/scoops52/SeanCooperWDPortfolio',
     }
 ]
