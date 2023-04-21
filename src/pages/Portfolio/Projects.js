@@ -1,5 +1,5 @@
 import { FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiRedux, SiReactrouter } from "react-icons/si";
+import { SiJavascript, SiRedux, SiReactrouter, SiStorybook, SiStyledcomponents, SiNextdotjs } from "react-icons/si";
 import { images } from "../../constants";
 
 const projects = [
@@ -89,6 +89,36 @@ const projects = [
         ],
         link: 'https://seancooperwebdev.netlify.app/',
         gitHub: 'https://github.com/scoops52/SeanCooperWDPortfolio',
+    },
+    {
+        name: 'Ecommerce Component Library',
+        img: images.GatherComponentLibrary,
+        description: 'A component library used to build and style components to be used in Ecommerce sight. Components are documented in Storybook.',
+        icons: 
+            [
+                {
+                    icon: <SiStorybook/>,
+                    label: 'Storybook',
+                },
+                {
+                    icon: <SiStyledcomponents />,
+                    label: 'Styled Components',
+                },
+                {
+                    icon: <SiJavascript />,
+                    label: 'JavaScript (ES6)',
+                },
+                {
+                    icon: <FaReact />,
+                    label: 'React JS',
+                },
+                {
+                    icon: <SiNextdotjs />,
+                    label: 'Next JS'
+                },
+            ],
+        link: 'https://github.com/scoops52/Gather-Component-Library',
+        gitHub: 'https://github.com/scoops52/Gather-Component-Library',
     }
 ]
 

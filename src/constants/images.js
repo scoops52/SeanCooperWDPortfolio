@@ -10,5 +10,6 @@ import KoaNoBg from '../assets/KoaPupNoBg.PNG';
 import Watchr from '../assets/Watchr.png';
 import Liz from '../assets/LizWebsite.png';
 import SeanWebsite from '../assets/SeanWebsite.png';
+import GatherComponentLibrary from '../assets/GatherComponentLibrary.png'
 // eslint-disable-next-line
-export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite }
+export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite, GatherComponentLibrary }

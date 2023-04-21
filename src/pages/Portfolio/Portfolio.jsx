@@ -16,6 +16,9 @@ const Portfolio = () => {
             </h3>
         </div>
         <div className={PortfolioStyles.card}>
+         <ReverseCard projectIndex={3} />
+        </div>
+        <div className={PortfolioStyles.card}>
           <ProjectCard projectIndex={0} />
         </div>
         <div className={PortfolioStyles.card}>
