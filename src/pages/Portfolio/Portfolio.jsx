@@ -21,6 +21,9 @@ const Portfolio = () => {
         <div className={PortfolioStyles.card} id='liz'>
          <ReverseCard projectIndex={1} />
         </div>
+        <div className={PortfolioStyles.card} id='gather'>
+          <ProjectCard projectIndex={4} />
+        </div>
         <div className={PortfolioStyles.card} id='gather-library'>
          <ReverseCard projectIndex={3} />
         </div>

@@ -119,6 +119,36 @@ const projects = [
             ],
         link: 'https://github.com/scoops52/Gather-Component-Library',
         gitHub: 'https://github.com/scoops52/Gather-Component-Library',
+    },
+    {
+        name: 'Gather Ecommerce Site',
+        img: images.Gather,
+        description: 'A functioning Ecommerce site with updating cart and product data, styled using designs from Figma files',
+        icons: 
+            [
+                {
+                    icon: <SiJavascript />,
+                    label: 'JavaScript (ES6)',
+                },
+                {
+                    icon: <FaReact />,
+                    label: 'React JS',
+                },
+                {
+                    icon: <SiRedux />,
+                    label: 'Redux/Redux Toolkit'
+                },
+                {
+                    icon: <SiStyledcomponents />,
+                    label: 'Styled Components',
+                },
+                {
+                    icon: <SiNextdotjs />,
+                    label: 'Next JS'
+                },
+            ],
+        link: 'https://github.com/scoops52/Gather-Ecommerce-Site',
+        gitHub: 'https://github.com/scoops52/Gather-Ecommerce-Site',
     }
 ]
 
