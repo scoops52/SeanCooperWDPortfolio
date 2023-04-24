@@ -15,16 +15,16 @@ const Portfolio = () => {
               Many more in the works!
             </h3>
         </div>
-        <div className={PortfolioStyles.card}>
-         <ReverseCard projectIndex={3} />
-        </div>
-        <div className={PortfolioStyles.card}>
+        <div className={PortfolioStyles.card} id='watchr'>
           <ProjectCard projectIndex={0} />
         </div>
-        <div className={PortfolioStyles.card}>
+        <div className={PortfolioStyles.card} id='liz'>
          <ReverseCard projectIndex={1} />
         </div>
-        <div className={PortfolioStyles.card}>
+        <div className={PortfolioStyles.card} id='gather-library'>
+         <ReverseCard projectIndex={3} />
+        </div>
+        <div className={PortfolioStyles.card} id='portfolio-site'>
           <ProjectCard projectIndex={2} />
         </div>
     </div>
