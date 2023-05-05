@@ -59,7 +59,7 @@ const projects = [
             },
         ],
         link: 'https://lizzymeg.com',
-        gitHub: 'https://github.com/scoops52/LizzyMeg',
+        gitHub: 'https://github.com/scoops52/LizzyMeg3.0',
     },
     {
         name: 'Sean Cooper Web Developer Website',
