@@ -12,5 +12,6 @@ import Liz from '../assets/LizWebsite.png';
 import SeanWebsite from '../assets/SeanWebsite.png';
 import GatherComponentLibrary from '../assets/GatherComponentLibrary.png'
 import Gather from '../assets/Gather.png'
+import Taskr from '../assets/Taskr.png'
 // eslint-disable-next-line
-export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite, GatherComponentLibrary, Gather }
+export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite, GatherComponentLibrary, Gather, Taskr }

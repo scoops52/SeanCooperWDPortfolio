@@ -1,5 +1,5 @@
 import { FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiRedux, SiReactrouter, SiStorybook, SiStyledcomponents, SiNextdotjs } from "react-icons/si";
+import { SiJavascript, SiRedux, SiReactrouter, SiStorybook, SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { images } from "../../constants";
 
 const projects = [
@@ -149,7 +149,36 @@ const projects = [
             ],
         link: 'https://github.com/scoops52/Gather-Ecommerce-Site',
         gitHub: 'https://github.com/scoops52/Gather-Ecommerce-Site',
-    }
+    },
+    {
+        name: 'Taskr App',
+        img: images.Taskr,
+        description: 'A productivity web app that I personally use in my day to day. It tracks time spent on tasks, helping you set aside enough time to make progress on whatever you need to work on. Currently in alpha testing with users.',
+        icons: [
+            {
+                icon: <SiTypescript />,
+                label: 'TypeScript',
+            },
+            {
+                icon: <SiTailwindcss />,
+                label: 'Tailwind CSS',
+            },
+            {
+                icon: <SiNextdotjs />,
+                label: 'NextJS',
+            },
+            {
+                icon: <FaReact />,
+                label: 'React JS',
+            },
+            {
+                icon: <SiRedux />,
+                label: 'Redux/Redux Toolkit'
+            },
+        ],
+        link: 'https://taskr-nine.vercel.app/',
+        gitHub: 'https://github.com/scoops52/Taskr',
+    },
 ]
 
 export default projects
