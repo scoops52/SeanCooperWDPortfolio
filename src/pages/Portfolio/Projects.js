@@ -1,5 +1,6 @@
 import { FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript, SiRedux, SiReactrouter, SiStorybook, SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb"
+import { SiJavascript, SiRedux, SiReactrouter, SiStorybook, SiStyledcomponents, SiNextdotjs, SiTailwindcss, SiTypescript, SiExpo } from "react-icons/si";
 import { images } from "../../constants";
 
 const projects = [
@@ -178,6 +179,35 @@ const projects = [
         ],
         link: 'https://taskr-nine.vercel.app/',
         gitHub: 'https://github.com/scoops52/Taskr',
+    },
+    {
+        name: 'Taskr Mobile App',
+        img: images.TaskrMobile,
+        description: 'A productivity mobile app created in React Native that I personally use in my day to day. It tracks time spent on tasks, helping you set aside enough time to make progress on whatever you need to work on. Currently in alpha testing with users.',
+        icons: [
+            {
+                icon: <SiTypescript />,
+                label: 'TypeScript',
+            },
+            {
+                icon: <TbBrandReactNative />,
+                label: 'React Native',
+            },
+            {
+                icon: <SiExpo />,
+                label: 'Expo',
+            },
+            {
+                icon: <FaReact />,
+                label: 'React JS',
+            },
+            {
+                icon: <SiRedux />,
+                label: 'Redux/Redux Toolkit'
+            },
+        ],
+        link: 'https://expo.dev/accounts/scoops52/projects/taskr-mobile/updates/54731cad-0a91-4ef3-a0e6-d5b5561da894',
+        gitHub: 'https://github.com/scoops52/taskr-mobile',
     },
 ]
 

@@ -13,5 +13,6 @@ import SeanWebsite from '../assets/SeanWebsite.png';
 import GatherComponentLibrary from '../assets/GatherComponentLibrary.png'
 import Gather from '../assets/Gather.png'
 import Taskr from '../assets/Taskr.png'
+import TaskrMobile from '../assets/taskr-mobile-screengrab.png'
 // eslint-disable-next-line
-export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite, GatherComponentLibrary, Gather, Taskr }
+export default { universe, logoWhite, logoGrey, universeLg, websiteUnsplash, eCommerce, code, rugbyHeadshot, KoaNoBg, Watchr, Liz, SeanWebsite, GatherComponentLibrary, Gather, Taskr, TaskrMobile }
